@@ -27,22 +27,24 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
         .bio {
             background-color: #1e1e1e;
             padding: 20px;
             border-radius: 10px;
-            margin: 20px 0;
+            margin-bottom: 40px;
         }
         h2 {
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         h3 {
             font-family: 'Oswald', sans-serif;
             font-size: 22px;
             text-transform: uppercase;
+            text-shadow: 2px 2px 3px black;
+            margin-bottom: 20px;
         }
         .button {
             display: inline-block;
@@ -57,27 +59,37 @@
         .button:hover {
             background-color: #1565c0;
         }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 40px;
+        }
         .social-links a {
-            display: inline-flex;
+            display: flex;
             align-items: center;
-            margin: 10px;
             color: #1e88e5;
             text-decoration: none;
             font-size: 20px;
+            gap: 10px;
         }
         .social-links img {
             width: 24px;
             height: 24px;
-            margin-right: 8px;
         }
         .package {
-            padding: 20px;
+            padding: 30px;
             margin: 30px 0;
             border-radius: 10px;
             position: relative;
             text-align: left;
             padding-left: 120px;
             color: #fff;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .gray { background-color: rgba(117, 117, 117, 0.8); }
         .green { background-color: rgba(46, 125, 50, 0.8); }
@@ -94,10 +106,11 @@
             align-items: center;
             justify-content: center;
             font-size: 30px;
-            color: #fff;
+            color: rgba(255, 255, 255, 0.7);
+            text-shadow: 2px 2px 5px black;
         }
         .footer {
-            padding: 20px;
+            padding: 40px 20px;
             font-size: 14px;
         }
     </style>
@@ -116,7 +129,6 @@
             <div class="price-box">🚀</div>
             <h3>START</h3>
             <p><strong>1 коуч-сесія</strong> (60 хвилин), розбір твоєї ситуації, конкретні кроки для старту.</p>
-            <p>Допоможе тобі зрозуміти свої наступні кроки та побачити варіанти розвитку.</p>
             <p><strong>Ціна - 30$</strong></p>
         </div>
 
@@ -136,11 +148,11 @@
 
         <h2>Мої соцмережі</h2>
         <div class="social-links">
-            <a href="https://t.me/desperovtg" target="_blank"><img src="telegram_logo.png">Telegram</a>
-            <a href="https://open.spotify.com/artist/2b899Orwlyxlay6KfRLkUP" target="_blank"><img src="spotify_logo.png">Spotify</a>
-            <a href="https://www.youtube.com/@desperov" target="_blank"><img src="youtube_logo.png">YouTube</a>
-            <a href="https://www.instagram.com/desperovv" target="_blank"><img src="instagram_logo.png">Instagram</a>
-            <a href="https://www.tiktok.com/@desperov" target="_blank"><img src="tiktok_logo.png">TikTok</a>
+            <a href="https://t.me/desperovtg" target="_blank"><img src="telegram.svg">Telegram</a>
+            <a href="https://open.spotify.com/artist/2b899Orwlyxlay6KfRLkUP" target="_blank"><img src="spotify.svg">Spotify</a>
+            <a href="https://youtube.com/@desperovmusic" target="_blank"><img src="youtube.svg">YouTube</a>
+            <a href="https://instagram.com/desperovv" target="_blank"><img src="instagram.svg">Instagram</a>
+            <a href="https://tiktok.com/@desperov" target="_blank"><img src="tiktok.svg">TikTok</a>
         </div>
     </div>
 
