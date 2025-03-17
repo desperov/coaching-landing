@@ -27,6 +27,12 @@
             margin: 0 auto;
             padding: 20px;
         }
+        .bio {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
         .button {
             display: inline-block;
             margin: 10px;
@@ -48,10 +54,17 @@
             font-size: 20px;
         }
         .package {
-            background-color: #1e1e1e;
             padding: 20px;
             margin: 20px 0;
             border-radius: 10px;
+            color: #fff;
+        }
+        .gray { background-color: #757575; }
+        .green { background-color: #2e7d32; }
+        .gold { background: linear-gradient(135deg, #ffd700, #ffcc00); }
+        .gold h3::before {
+            content: '\u{1F3C6}';
+            margin-right: 8px;
         }
         .footer {
             padding: 20px;
@@ -64,27 +77,38 @@
     <img src="https://i.imgur.com/KdU14jy.png" alt="Desperov" class="fullscreen-image">
 
     <div class="container">
+        <div class="bio">
+            <h2>Хто я?</h2>
+            <p>Привіт, я Валентин Десперов — ментор для креативних людей. Допомагаю знайти своє покликання, подолати страх невдачі та розвинути свій потенціал. Маю великий досвід у творчих сферах, включаючи музику, контент-мейкінг і особистий брендінг.</p>
+        </div>
+
         <h2>Що ти отримаєш?</h2>
         <p>Індивідуальний підхід, практичні вправи, мій досвід у творчих сферах.</p>
 
         <h2>Пакети участі</h2>
 
-        <div class="package">
+        <div class="package gray">
             <h3>🚀 Старт</h3>
             <p>1 коуч-сесія (60 хвилин), розбір твоєї ситуації, конкретні кроки для старту.</p>
-            <p><strong>Ціна: 30$</strong></p>
+            <p><strong>Ціна:</strong></p>
+            <div style="width: 80px; height: 80px; background-color: gray; display: inline-block;"></div>
+            <p><strong>30$</strong></p>
         </div>
 
-        <div class="package">
+        <div class="package green">
             <h3>🔥 Standart - Глибоке занурення</h3>
             <p>4 коуч-сесії (по 60 хвилин), підтримка в Telegram, допомога з плануванням.</p>
-            <p><strong>Ціна: 100$</strong></p>
+            <p><strong>Ціна:</strong></p>
+            <div style="width: 80px; height: 80px; background-color: green; display: inline-block;"></div>
+            <p><strong>100$</strong></p>
         </div>
 
-        <div class="package">
+        <div class="package gold">
             <h3>🎯 VIP - маршрут</h3>
             <p>5 коуч-сесій, постійна підтримка, персональна стратегія розвитку, доступ до VIP-чату.</p>
-            <p><strong>Ціна: 200$</strong></p>
+            <p><strong>Ціна:</strong></p>
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #ffd700, #ffcc00); display: inline-block;"></div>
+            <p><strong>200$</strong></p>
         </div>
 
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeg5EmPg0Er_irwRkBXx0IpGb2hGEwWrVM27pH9RPY53G4ATQ/viewform" class="button">Записатися на безкоштовну сесію</a>
@@ -100,6 +124,5 @@
     <div class="footer">
         <p>© 2025 Desperov | Всі права захищено</p>
     </div>
-
 </body>
 </html>
