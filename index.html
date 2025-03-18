@@ -49,12 +49,36 @@
             margin-bottom: 20px;
         }
         .package {
-            background-color: #1e1e1e;
-            padding: 20px;
-            margin: 20px auto;
+            padding: 30px;
+            margin: 30px auto;
             border-radius: 10px;
+            position: relative;
             text-align: left;
+            padding-left: 120px;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             max-width: 600px;
+            color: #fff;
+        }
+        .gray { background-color: rgba(117, 117, 117, 0.8); }
+        .green { background-color: rgba(46, 125, 50, 0.8); }
+        .gold { background: linear-gradient(135deg, rgba(255, 215, 0, 0.8), rgba(255, 204, 0, 0.8)); }
+        .price-box {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: rgba(255, 255, 255, 0.7);
+            text-shadow: 1px 1px 3px black;
         }
         .button {
             display: inline-block;
@@ -106,19 +130,22 @@
 
     <h2>Пакети участі</h2>
 
-    <div class="package">
+    <div class="package gray">
+        <div class="price-box">🚀</div>
         <h3>START</h3>
         <p><strong>1 коуч-сесія</strong> (60 хвилин), розбір твоєї ситуації, конкретні кроки для старту.</p>
         <p><strong>Ціна - 30$</strong></p>
     </div>
 
-    <div class="package">
+    <div class="package green">
+        <div class="price-box">🔥</div>
         <h3>STANDART</h3>
         <p><strong>4 коуч-сесії</strong> (по 60 хвилин), підтримка в Telegram, допомога з плануванням.</p>
         <p><strong>Ціна - 100$</strong></p>
     </div>
 
-    <div class="package">
+    <div class="package gold">
+        <div class="price-box">🏆</div>
         <h3>VIP</h3>
         <p><strong>5 коуч-сесій</strong>, постійна підтримка, персональна стратегія розвитку, доступ до VIP-чату.</p>
         <p><strong>Ціна - 200$</strong></p>
@@ -133,10 +160,6 @@
         <a href="#" target="_blank"><img src="https://i.imgur.com/youtube.png">YouTube</a>
         <a href="#" target="_blank"><img src="https://i.imgur.com/instagram.png">Instagram</a>
         <a href="#" target="_blank"><img src="https://i.imgur.com/tiktok.png">TikTok</a>
-    </div>
-
-    <div class="footer">
-        <p>© 2025 Desperov | Всі права захищено</p>
     </div>
 </body>
 </html>
